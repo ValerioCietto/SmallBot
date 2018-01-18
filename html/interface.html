@@ -1,0 +1,158 @@
+<!DOCTYPE html><html>
+<head>
+
+</head>
+<body>
+<p id="demo">Comanda il robottino</p>
+<button type="button" onclick="avanti()">avanti</button>
+<button type="button" onclick="indietro()">indietro</button>
+<button type="button" onclick="destra()">destra</button>
+<button type="button" onclick="sinistra()">sinistra</button>
+</br>
+</br>
+<button type="button" onclick="avantitutta()">avanti tutta!</button>
+<button type="button" onclick="stop1()">stop</button>
+</br>
+</br>
+<button type="button" onclick="servoleft()">look left</button>
+<button type="button" onclick="servocenter()">look center</button>
+<button type="button" onclick="servoright()">look right</button>
+</br><a href="http://esp8266.local/showNetworks">mostra reti</a><script>
+function servoright() {
+ var xhttp;
+if (window.XMLHttpRequest) {
+ xhttp = new XMLHttpRequest();
+} else {
+xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+}
+xhttp.onreadystatechange = function() {
+if (xhttp.readyState == 4 && xhttp.status == 200) {
+    document.getElementById("demo").innerHTML = "stop";
+}
+};
+xhttp.open("GET", "http://192.168.4.1/message?message=servoright", true);
+xhttp.send();
+}
+function servocenter() {
+ var xhttp;
+if (window.XMLHttpRequest) {
+ xhttp = new XMLHttpRequest();
+} else {
+xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+}
+xhttp.onreadystatechange = function() {
+if (xhttp.readyState == 4 && xhttp.status == 200) {
+    document.getElementById("demo").innerHTML = "stop";
+}
+};
+xhttp.open("GET", "http://192.168.4.1/message?message=servocenter", true);
+xhttp.send();
+}
+function servoleft() {
+ var xhttp;
+if (window.XMLHttpRequest) {
+ xhttp = new XMLHttpRequest();
+} else {
+xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+}
+xhttp.onreadystatechange = function() {
+if (xhttp.readyState == 4 && xhttp.status == 200) {
+    document.getElementById("demo").innerHTML = "stop";
+}
+};
+xhttp.open("GET", "http://192.168.4.1/message?message=servoleft", true);
+xhttp.send();
+}
+function stop1() {
+ var xhttp;
+if (window.XMLHttpRequest) {
+ xhttp = new XMLHttpRequest();
+} else {
+xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+}
+xhttp.onreadystatechange = function() {
+if (xhttp.readyState == 4 && xhttp.status == 200) {
+    document.getElementById("demo").innerHTML = "stop";
+}
+};
+xhttp.open("GET", "http://192.168.4.1/message?message=stop", true);
+xhttp.send();
+}
+function avantitutta() {
+ var xhttp;
+if (window.XMLHttpRequest) {
+ xhttp = new XMLHttpRequest();
+} else {
+xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+}
+xhttp.onreadystatechange = function() {
+if (xhttp.readyState == 4 && xhttp.status == 200) {
+    document.getElementById("demo").innerHTML = "forward!";
+}
+};
+xhttp.open("GET", "http://192.168.4.1/message?message=forward", true);
+xhttp.send();
+}
+function avanti() {
+ var xhttp;
+if (window.XMLHttpRequest) {
+ xhttp = new XMLHttpRequest();
+} else {
+xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+}
+xhttp.onreadystatechange = function() {
+if (xhttp.readyState == 4 && xhttp.status == 200) {
+    document.getElementById("demo").innerHTML = "avanti";
+}
+};
+xhttp.open("GET", "http://192.168.4.1/message?message=avanti", true);
+xhttp.send();
+}
+function indietro() {
+ var xhttp;
+if (window.XMLHttpRequest) {
+ xhttp = new XMLHttpRequest();
+} else {
+xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+}
+xhttp.onreadystatechange = function() {
+if (xhttp.readyState == 4 && xhttp.status == 200) {
+    document.getElementById("demo").innerHTML = "indietro";
+}
+};
+xhttp.open("GET", "http://192.168.4.1/message?message=indietro", true);
+xhttp.send();
+}
+function destra() {
+ var xhttp;
+if (window.XMLHttpRequest) {
+ xhttp = new XMLHttpRequest();
+} else {
+xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+}
+xhttp.onreadystatechange = function() {
+if (xhttp.readyState == 4 && xhttp.status == 200) {
+    document.getElementById("demo").innerHTML = "destra";
+}
+};
+xhttp.open("GET", "http://192.168.4.1/message?message=destra", true);
+xhttp.send();
+}
+function sinistra() {
+ var xhttp;
+if (window.XMLHttpRequest) {
+ xhttp = new XMLHttpRequest();
+} else {
+xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+}
+xhttp.onreadystatechange = function() {
+if (xhttp.readyState == 4 && xhttp.status == 200) {
+    document.getElementById("demo").innerHTML = "sinistra";
+}
+};
+xhttp.open("GET", "http://192.168.4.1/message?message=sinistra", true);
+xhttp.send();
+}
+</script>
+</body>
+</html>
