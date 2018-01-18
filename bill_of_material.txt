@@ -1,0 +1,9 @@
+Smart car 4wheel dc motor kit
+Arduino Mega 2560
+Adafruit motor shield v1.2
+Powerbank 10000mAh with 2A 5V port
+Wemos d1 mini
+
+(optional for adding remote viewing)
+Servo MG995
+LG k8
